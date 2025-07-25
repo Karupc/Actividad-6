@@ -71,3 +71,14 @@ match opciones:
             prome = sum(notas) / len(notas)
             print(f"El promedio es de {prome}")
         promedio_cursos()
+    case "5":
+        n = int(input("¿Cuántos números desea ingresar?: "))
+        for i in range(n):
+            num = int(input(f"Ingrese el número {i+1}: "))
+            numeros2.append(num)
+        def num_mayor_menor():
+            nma = max(numeros2)
+            nme = min(numeros2)
+            print(f"El número mayor es: {nma}")
+            print(f"El número menor es: {nme}")
+        num_mayor_menor()
