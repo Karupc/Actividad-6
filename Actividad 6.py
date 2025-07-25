@@ -44,4 +44,19 @@ match opciones:
                 case "4":
                     print("Volverá al primer menú")
                     break
-
+    case "2":
+         print("\n--CALCULAR EL ÁREA DE UN TRIÁNGULO--\n")
+         base = int(input("Ingrese la base del triángulo en cm: "))
+         altura = int(input("Ingrese la altura del triángulo en cm: "))
+         def area_triangulo(base, altura):
+             print("El área del triángulo es de: ", (base * altura) / 2, "cm")
+         area_triangulo(base, altura)
+    case "3":
+         print("\n--VERIFICAR SI UN  NÚMERO ES PAR O IMPAR--")
+         numero = int(input("Ingrese un número: "))
+         def numero_par_impar(numero):
+             if numero % 2 == 0:
+                 print(f"{numero} es par")
+             else:
+                 print(f"{numero} es impar")
+         numero_par_impar()
