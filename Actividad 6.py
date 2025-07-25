@@ -86,3 +86,5 @@ while True:
         case "6":
             print("Programa terminado, muchas gracias por utilizarlo")
             break
+        case _:
+            print("Opción no válida")
