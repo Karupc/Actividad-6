@@ -1,4 +1,6 @@
 numeros = []
+notas = []
+numeros2 = []
 print("\n--MENÚ DE OPERACIONES MAFTEMÁTICAS--\n")
 print("1.- Ingresar números y mostrar\n"
       "2.- Calcular el área de un triángulo\n"
@@ -59,4 +61,13 @@ match opciones:
                  print(f"{numero} es par")
              else:
                  print(f"{numero} es impar")
-         numero_par_impar()
+         numero_par_impar(numero)
+    case "4":
+        cursos = int(input("Ingrese la cantidad de cursos que tiene: "))
+        for i in range(cursos):
+            nota = int(input(f"Ingrese la nota del curso {i+1}: "))
+            notas.append(nota)
+        def promedio_cursos():
+            prome = sum(notas) / len(notas)
+            print(f"El promedio es de {prome}")
+        promedio_cursos()
