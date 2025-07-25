@@ -82,3 +82,5 @@ match opciones:
             print(f"El número mayor es: {nma}")
             print(f"El número menor es: {nme}")
         num_mayor_menor()
+    case "6":
+        print("Programa terminado, muchas gracias por utilizarlo")
